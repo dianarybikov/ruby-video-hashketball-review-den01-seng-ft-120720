@@ -196,19 +196,3 @@ end
 end
 end
 
-def big_shoe_rebounds
-big_shoe = 0 
-rebounds = 0 
-game_hash.each do |key, value|
- value[:players].each do |player|
-   if player[:shoes]  big_shoe
-     big_shoe = player[:shoe]
-     rebounds = player[:rebounds]
-   end
- end
- end
- return rebounds
- end
-
-
-  
